@@ -1,0 +1,193 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="description" content="Eric Michelman's Weblog">
+<meta name="keywords" content="Eric Michelman, scroll wheel, mouse wheel">
+<title>The History of the Scroll Wheel</title>
+<link rel="stylesheet" href="styles-site.css" type="text/css">
+</head>
+
+<body>
+
+<div class="home-link"><a href="index.htm">Home</a></div>
+<div class="main-content">
+<p class="title">The History of the Scroll Wheel</p>
+<p class="attrib">Eric Michelman, program manager for Excel</p>
+
+<p>Back in 1993, as I was watching many Excel users do their work, I noticed the 
+difficulty they had moving around large spreadsheets.&nbsp; Finding and jumping 
+to different sections was often difficult.&nbsp; I had the idea that perhaps a 
+richer input device would help.</p>
+
+<p>My original idea was the <i>zoom lever</i>.&nbsp; This was simply a lever, 
+presumably for your non-mouse hand (i.e. on the left side of your keyboard if 
+you're right-handed).&nbsp; When you push it away from you the spreadsheet zooms 
+out.&nbsp; When you pull it towards you, it zooms back in.</p>
+
+<p style="margin-left: 3em"><i>Imagine if you could control how big the earth is... If you want to go to 
+the store, you would shrink the earth down (everything but you shrinks too), 
+till you could see the store and then just take a big step over to it; then once 
+you're there and want to go inside, you'd bring the earth back up to normal size 
+and proceed like nothing unusual happened.&nbsp; If you wanted to visit San 
+Francisco, you would make the earth much smaller, till you could see the SF Bay, 
+take a step over to it (we'll ignore tsunamis here), and then bring it back 
+to normal size.&nbsp; To walk to the next office, you wouldn't resize the earth.&nbsp; 
+Same thing for spreadsheet navigation.</i></p>
+
+<div style="float: right; margin: 1em 2em 2em 2em">
+<img src="images/joystick.jpg" height=200 title="The first scroll wheel"
+alt="[Image of the joystick that was used to prototype the scroll wheel]">
+<br><div style="text-align: center; margin-top: .5em; color: #003366">
+The first scroll wheel</div>
+</div>
+
+<p>I prototyped this by hooking a joystick up to my computer and using DDE to 
+connect it to Excel for zooming.&nbsp; Using a joystick button along with the 
+stick, I also had it do &quot;data zooming&quot;, which was drilling in and out through 
+Excel outlines.</p>
+
+<p>This all seemed useful, so I showed it to the Hardware division at Microsoft.&nbsp; 
+They were initially cool to the idea, which I presented as a zoom lever, and it 
+didn't go anywhere at that point.</p>
+
+<p>At this point most people thought it was kind of wacky.&nbsp; 
+Focusing on zooming was a very Excel-centric approach.&nbsp; More specifically, 
+it was a very<i> 2-D centric</i> approach.&nbsp; That is, using an application 
+that presents 2-dimensional data, like a spreadsheet or graphics, it's very 
+useful to zoom in and out.&nbsp; But the other main style of application is a 
+linear flow application like Word, and there it's not as useful.<i>&nbsp; </i>
+You could do zooming with Word, where zooming out shows you a multi-page view 
+and then you click on a desired page and zoom into it, but that's not as natural 
+as with a spreadsheet or graphics and images.</p>
+
+<p style="margin-left: 3em"><i>2004 Note: Microsoft has now introduced keyboards with a zoom lever built
+in.  They call it a</i> zoom slider.
+
+<p>A number of people suggested adding panning and scrolling functionality.&nbsp; 
+In particular I remember Chris Graham saying zooming was just too limiting and 
+it should pan as well.&nbsp; In response to this feedback, I added panning to 
+the prototype, so moving the joystick side-to-side and back-and-forth scrolled 
+Excel in the corresponding direction.</p>
+
+<p>Around this time, the hardware guys came back and said that they had 
+considered adding a wheel to the mouse, but they weren't sure what it would be 
+used for.&nbsp; Document navigation answered that question, so they said that if 
+I could get Office to support it, they would build it.&nbsp; This really meant 
+Excel and Word since they were the &quot;800 lb gorillas&quot; -- if Excel and Word 
+supported something, then the other Office apps would follow, and if Office as a 
+whole supported something, then everyone else would follow too (this was 
+early 1993 when Office was the heart of most people's computer usage).</p>
+
+<p>Being the program management lead for the next version of Excel, I was able 
+to get a commitment from the Excel team to support it.&nbsp; The Word group was 
+also willing to go along, due in no small part to the support of Ed Fries, their 
+development manager, who I had worked with earlier in Excel.&nbsp; The program 
+manager assigned, Todd Roshak, and developer, Ryan Kim, 
+did a great job by focusing on scrolling for Word.</p>
+
+<p>Having Word scroll in response to the wheel roll while Excel zoomed was very 
+controversial since people didn't want them to be incompatible (even though 
+Ctrl-roll allowed each to do the other function too).&nbsp; Ironically, most of 
+the pressure at that time was on Word to go along with zooming since that was 
+still considered the primary use of the wheel.</p>
+
+<p>This zoom vs scroll question remained a huge on-going controversy within the 
+project.&nbsp; There was a great deal of pressure for compatibility (having all 
+the apps do the same thing), and I resisted this for two reasons.&nbsp; First, I 
+didn't think we had enough experience with the wheel to stop experimenting at 
+that point, I wanted to let people continue trying different things as they saw 
+fit.&nbsp; After all, if we insisted on strict compatibility from the start, we 
+would have been left with only zooming.&nbsp; Secondly, I was more concerned 
+with  users finding the wheel very useful in their main applications.&nbsp; 
+Being compatible but not useful didn't seem to me like a recipe for success.&nbsp; 
+We did a number of usability tests as well, but they produced the usual results 
+which are that each program manager (including me) sees what they want.</p>
+
+<p>The hardware group gamely went along with this controversy.&nbsp; They 
+accepted my initial enthusiastic pitch of zooming and it was a bit uncomfortable 
+for them to proceed with what was a large investment in tooling up to make the 
+new mouse while a big controversy raged over what it would be used for.&nbsp; 
+But they were always nothing but constructive and went along with it.  Their team
+really deserves a lot of credit for moving forward and pulling it off.  Carol Clemett was their
+project manager and she excels at the graceful running of large projects.  Steve Kaneko did
+the industrial design (if that's the right term here).  Kabir Siddiqui was their lead hardware
+designer and he did a great job adding the wheel and then mid-stream making the wheel a button
+as well (see below).  Todd Holmdahl led the software development and Tim Brewer was the program
+manager, both of whom did a terrific job.  Rick Thompson was head of the hardware group and
+enthusiastically supported the project and helped it get going.  Undoubtedly I'm forgetting
+people who deserve mention and I'm sorry for that.
+</p>
+
+<p>Around this time, we also made the wheel a button -- you could press it as 
+well as roll it.&nbsp; I remember David Jones, an Excel program manager, 
+bringing in a TV remote which had a wheel button and we saw that it worked 
+pretty well.&nbsp; Adding this allowed panning -- while keeping the button 
+pressed and moving the mouse, the document scrolls in the direction that you 
+move the mouse.&nbsp; The further you move the mouse, the faster it scrolls.&nbsp; 
+And then if you just click the wheel (as a button), you go into &quot;reader mode&quot; 
+where you can have the document continuously scroll (where the speed is adjusted 
+by how far you move the mouse from the point of button-down).&nbsp; This is cool 
+functionality, and remains useful today, although in retrospect I don't 
+remember why we thought this was important enough to add in the middle of the 
+project.&nbsp; Again, the hardware group made a superb effort to add this, and 
+it was a non-trivial engineering task to combine the wheel and button within the 
+mouse.&nbsp; I should add that the Excel and Word developers on the 
+project, Juha Niemisto and Ryan Kim did really terrific work on this project and enthusiastically took the functionality 
+far beyond what was originally planned -- not an easy thing to do in the middle 
+of a Microsoft development project where you have a long list of schedule-based 
+deliverables.</p>
+
+<p>The zoom vs scroll controversy eventually came to a head when one of the 
+marketing people in the hardware group gave a pre-release demo to Walt Mossberg 
+of the Wall Street Journal.&nbsp; 
+He liked the idea but was scathing in his &quot;Microsoft doesn't get it&quot; criticism 
+of Excel and Word being &quot;incompatible&quot;.&nbsp; When I heard how it was 
+presented to him I was quite angry since it seemed to me that it was presented 
+poorly, without adequate explanation of the benefits of our approach.&nbsp; 
+But then I had a small epiphany and realized that if our approach required it to 
+be presented in &quot;the right way&quot;, then it was the wrong approach.&nbsp; So I sent 
+out an &quot;I Give Up&quot; email and agreed to have Excel scroll by default.&nbsp; I was 
+told that at an Executive Staff mtg that morning (Billg &amp; staff) they spent the 
+first 10 to 15 minutes talking about whether that was the right decision.</p>
+
+<p>Another aspect of the project worth mentioning was the support of the Windows 
+team, in particular Mike Schmidt.&nbsp; Having the mouse driver generate the 
+roll message was an inefficient way to handle it, so the roll msg was built into 
+the OS.&nbsp; Originally we wanted a new message for the wheel button, but Mike 
+said that there already was a third button defined and we should use that, which 
+was the right approach. </p>
+
+<p>Along the way I also worked with many other product groups within Microsoft 
+to encourage their support of the wheel.&nbsp; By the time the mouse shipped, 
+over 20 product groups had support built in or under development.</p>
+
+<p style="font-weight: bold; color: #003366; ">From the Visceral Excel project</p>
+<p>This project was part of a larger project I called
+<a href="visceral%20Excel.htm">Visceral Excel</a>. 
+The idea was that by 1993 Windows apps had strayed from the original GUI 
+intention, which was that you'd see familiar things on the screen and interact with them in 
+intuitive ways.  The classic example was the desktop arrayed with your documents and a trashcan
+into which you could drag and drop a document.  Or dynamically resizing columns, where you click
+and drag the border and see it resize as you move it.
+The point was that you'd intuitively know how to 
+use the computer without a lot of thought and mental processing on your part.&nbsp;
+</p>
+<p>In other words, GUI's were to be a more <i>visceral</i> experience.&nbsp; This was the point of the
+Visceral Excel project -- to get us back to that.&nbsp; 
+Even in the mid-90's, the big Office apps were past 200 menu commands, 
+with lots  of compound dialog panes, and untold numbers of dialog box 
+options.&nbsp; Of course today it's even worse.&nbsp; Using these apps was (and still is) very much an intellectual 
+exercise of immersing yourself in the product's UI, not your content and objectives.
+This work is over 10 yrs old now, but I think it's still just as relevant and important.
+<a href="visceral%20Excel.htm">Read more about the Visceral Excel project.</a>
+</p>
+
+</div>
+
+</body>
+
+</html>
