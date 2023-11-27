@@ -1,0 +1,20 @@
+body {
+	font-family: verdana, arial, sans-serif;
+	margin-left: 20px;
+	background: #FFFFFF;
+	}
+	
+.main-content	{ line-height: 150%;	font-size: 12px; }
+.title 			{ color: #003366; font-weight: bold; font-size: large }
+.sub-title		{ color: #EF9100; font-size: large; }
+.home-link		{ text-align: right; color: #999966; font-size: 12px; margin-right: 2em;}
+.attrib			{ color: #003366; font-weight: bold; line-height: 100%}
+
+A	 		{ text-decoration: none; }  <!-- color was: 999966{  } -->
+standout-link { color: #003366; font-weight: bold; }
+A:link		{ text-decoration: none; color: #003366 } 
+A:visited	{ color: #003366; text-decoration: none; } 
+A:active	{ color: #99CC66; } 
+A:hover		{ color: #99CC66; text-decoration: underline }
+h2			{ color: #003366; font-size: medium; font-weight: normal }
+li			{ margin-top: 0.8em; margin-bottom: 0.8em; }8:01 PM 12/1/2020
